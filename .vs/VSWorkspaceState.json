@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Clinic",
+    "\\Clinic\\Controllers",
+    "\\Clinic\\Models",
+    "\\Clinic\\Views",
+    "\\Clinic\\Views\\Appointment",
+    "\\Clinic\\Views\\PatientReg",
+    "\\Clinic\\Views\\Shared"
+  ],
+  "SelectedNode": "\\Clinic\\Controllers\\StaffAccountsController.cs",
+  "PreviewInSolutionExplorer": false
+}

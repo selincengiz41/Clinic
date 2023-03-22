@@ -1,0 +1,24 @@
+﻿@model DataSet
+@using System.Data
+
+@using (Html.BeginForm())
+{
+<div class="outer-box">
+    <div class="login-box">
+
+
+        <input type="text" name="ıd" class="form-control" placeholder="Ziyaretci Kodu" value="@Model.Tables[0].Rows[0]["ziyaretciID"]" />
+        <input type="text" name="name" class="form-control" placeholder="Adı Soyadı"  value="@Model.Tables[0].Rows[0]["ziyaretciAdi"]"/>
+        <input type="text" name="kimlikNo" class="form-control" placeholder="Kimlik No" value="@Model.Tables[0].Rows[0]["ziyaretciTCNO"]">
+        <input type="text" name="adres" class="form-control" placeholder="Adres" value="@Model.Tables[0].Rows[0]["ziyaretciAdres"]">
+       
+        <input type="text" name="yakinlik" class="form-control" placeholder="Yakınlık" value="@Model.Tables[0].Rows[0]["yakınlık"]"/>
+        <input type="text" name="ziyaretTarihi" class="form-control" placeholder="Ziyaret Tarihi" value="@Model.Tables[0].Rows[0]["ziyaretTarih"]"/>
+
+
+
+        <button id="btn-login">Kaydet</button>
+
+    </div>
+
+</div>}

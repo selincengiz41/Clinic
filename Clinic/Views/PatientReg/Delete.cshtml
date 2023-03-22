@@ -1,0 +1,87 @@
+﻿@model DataSet
+@using System.Data
+@using (Html.BeginForm())
+
+{
+<div class="outer-box">
+    <div class="login-box">
+        <table cellpadding="0" cellspacing="0">
+            <tr>
+                <th>hastaID</th>
+                <th>Adı Soyadı</th>
+                <th>Kimlik No</th>
+                <th>Baba Adı</th>
+                <th>Anne Adı</th>
+                <th>Dogum Tarihi</th>
+                <th>Dogum Yeri</th>
+                <th>Cinsiyet</th>
+                <th>Boy</th>
+                <th>Kilo</th>
+                <th>Meslek</th>
+                <th>Kayıt Tarihi</th>
+                <th>Il</th>
+                <th>Ilce</th>
+                <th>Adres</th>
+                <th>Ev Telefonu</th>
+                <th>Cep Telefonu</th>
+                <th>E-Mail</th>
+                <th>Sosyal Guvenlik Kurumu</th>
+                <th>Sigara</th>
+                <th>Alkol</th>
+                <th>Kan Grubu</th>
+                <th>Hepatit</th>
+                <th>HIV</th>
+                <th>Diyabet</th>
+                <th>Kullandığı İlaçlar</th>
+                <th>Gecmis Hastalıkları</th>
+                <th>Aile Hastalıkları</th>
+                <th>Gecmis Ameliyatları</th>
+                <th>Sakin Hakkinda</th>
+
+            </tr>
+            @foreach (DataRow row in Model.Tables[0].Rows)
+            {
+    <tr>
+        <td>@row["hastaID"] </td>
+        <td>@row["hastaAdi"] </td>
+        <td>@row["kimlikNo"] </td>
+        <td>@row["babaadi"] </td>
+        <td>@row["anneadi"] </td>
+        <td>@row["dogumtarihi"] </td>
+        <td>@row["dogumyeri"] </td>
+        <td>@row["cinsiyet"] </td>
+        <td>@row["boy"] </td>
+        <td>@row["kilo"] </td>
+        <td>@row["meslek"] </td>
+        <td>@row["kayittarihi"] </td>
+        <td>@row["il"] </td>
+        <td>@row["ilçe"] </td>
+        <td>@row["adres"] </td>
+        <td>@row["evTel"] </td>
+        <td>@row["ceptel"] </td>
+        <td>@row["email"] </td>
+        <td>@row["sosguvkur"] </td>
+        <td>@row["sigara"] </td>
+        <td>@row["alkol"] </td>
+        <td>@row["kangrubu"] </td>
+        <td>@row["hepatit"] </td>
+        <td>@row["hiv"] </td>
+        <td>@row["diyabet"] </td>
+        <td>@row["kullandigilac"] </td>
+        <td>@row["gecmishastaliklar"] </td>
+        <td>@row["ailehastaliklari"] </td>
+        <td>@row["gecmisameliyat"] </td>
+        <td>@row["sakinhakkinda"] </td>
+
+    </tr>}
+        </table>
+        <input type="text" name="sakinkodu" class="form-control" placeholder="Sakin Kodu" />
+
+
+
+
+        <button id="btn-login">Sil</button>
+
+    </div>
+
+</div>}

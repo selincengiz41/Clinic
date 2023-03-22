@@ -1,0 +1,55 @@
+﻿@model DataSet
+@using System.Data
+@using (Html.BeginForm())
+
+{
+<div class="outer-box">
+    <div class="login-box">
+
+
+
+        @*<input type="text" name="sakinkodu" class="form-control" placeholder="Sakin Hakkinda" value="@Model.Tables[0].Rows[0]["hastaID"]" />*@
+        @try
+        {
+        <input type="text" name="name" class="form-control" placeholder="Adı Soyadı" value="@Model.Tables[0].Rows[0]["hastaAdi"]" />
+        <input type="text" name="kimlikNo" class="form-control" placeholder="Kimlik No" value="@Model.Tables[0].Rows[0]["kimlikNo"]">
+        <input type="text" name="babaadı" class="form-control" placeholder="Baba Adı" value="@Model.Tables[0].Rows[0]["babaadi"]" />
+        <input type="text" name="anneadı" class="form-control" placeholder="Anne Adı" value="@Model.Tables[0].Rows[0]["anneadi"]">
+        <input type="text" name="dogumtarihi" class="form-control" placeholder="Dogum Tarihi" value="@Model.Tables[0].Rows[0]["dogumtarihi"]" />
+        <input type="text" name="dogumyeri" class="form-control" placeholder="Dogum Yeri" value="@Model.Tables[0].Rows[0]["dogumyeri"]">
+        <input type="text" name="cinsiyet" class="form-control" placeholder="Cinsiyet" value="@Model.Tables[0].Rows[0]["cinsiyet"]" />
+        <input type="text" name="boy" class="form-control" placeholder="Boy" value="@Model.Tables[0].Rows[0]["boy"]">
+        <input type="text" name="kilo" class="form-control" placeholder="Kilo" value="@Model.Tables[0].Rows[0]["kilo"]" />
+        <input type="text" name="meslek" class="form-control" placeholder="Meslek" value="@Model.Tables[0].Rows[0]["meslek"]">
+        <input type="text" name="kayıttarihi" class="form-control" placeholder="Kayıt Tarihi" value="@Model.Tables[0].Rows[0]["kayittarihi"]" />
+        <input type="text" name="il" class="form-control" placeholder="Il" value="@Model.Tables[0].Rows[0]["il"]">
+        <input type="text" name="ilçe" class="form-control" placeholder="Ilce" value="@Model.Tables[0].Rows[0]["ilçe"]" />
+        <input type="text" name="adres" class="form-control" placeholder="Adres" value="@Model.Tables[0].Rows[0]["adres"]">
+        <input type="text" name="evTel" class="form-control" placeholder="Ev Telefonu" value="@Model.Tables[0].Rows[0]["evTel"]" />
+        <input type="text" name="ceptel" class="form-control" placeholder="Cep Telefonu" value="@Model.Tables[0].Rows[0]["ceptel"]">
+        <input type="text" name="email" class="form-control" placeholder="E-Mail" value="@Model.Tables[0].Rows[0]["email"]" />
+        <input type="text" name="sosguvkur" class="form-control" placeholder="Sosyal Guvenlik Kurumu" value="@Model.Tables[0].Rows[0]["sosguvkur"]" />
+        <input type="text" name="sigara" class="form-control" placeholder="Sigara" value="@Model.Tables[0].Rows[0]["sigara"]" />
+        <input type="text" name="alkol" class="form-control" placeholder="Alkol" value="@Model.Tables[0].Rows[0]["alkol"]">
+        <input type="text" name="kangrubu" class="form-control" placeholder="Kan Grubu" value="@Model.Tables[0].Rows[0]["kangrubu"]" />
+        <input type="text" name="hepatit" class="form-control" placeholder="Hepatit" value="@Model.Tables[0].Rows[0]["hepatit"]">
+        <input type="text" name="hıv" class="form-control" placeholder="HIV" value="@Model.Tables[0].Rows[0]["hiv"]" />
+        <input type="text" name="diyabet" class="form-control" placeholder="Diyabet" value="@Model.Tables[0].Rows[0]["diyabet"]">
+        <input type="text" name="kullandigilac" class="form-control" placeholder="Kullandığı İlaçlar" value="@Model.Tables[0].Rows[0]["kullandigilac"]" />
+        <input type="text" name="gecmishastalıklar" class="form-control" placeholder="Gecmis Hastalıkları" value="@Model.Tables[0].Rows[0]["gecmishastaliklar"]">
+        <input type="text" name="ailehastalıkları" class="form-control" placeholder="Aile Hastalıkları" value="@Model.Tables[0].Rows[0]["ailehastaliklari"]" />
+        <input type="text" name="gecmisameliyat" class="form-control" placeholder="Gecmis Ameliyatları" value="@Model.Tables[0].Rows[0]["gecmisameliyat"]">
+        <input type="text" name="sakinhakkında" class="form-control" placeholder="Sakin Hakkinda" value="@Model.Tables[0].Rows[0]["sakinhakkinda"]" />
+        }
+        catch (NullReferenceException e)
+        {
+            
+        }
+    
+
+
+        <button id="btn-login">GUNCELLE</button>
+
+    </div>
+
+</div>}
